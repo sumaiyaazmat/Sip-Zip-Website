@@ -1,0 +1,628 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+}
+  /* --------------Home page styling ---------------------- */
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #f10404;
+    padding: 10px 30px;   /* pehle zyada tha, ab kam */
+    gap: 15px;
+}
+
+/* Navbar */
+nav {
+    background-color: #f00c0c;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe8e4;
+}
+
+.hero h2 {
+    color: #f61c08;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color:rgb(233, 181, 181);
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(252, 5, 5, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #ff6f61;
+}
+.card:hover {
+    background-color: rgb(221, 124, 124);
+    transform: translateY(-10px) scale(1.05); /* Thoda upar aur zoom */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Shadow zyada ho jaye */
+}
+.card:hover h3 {
+    color: #e85b50;
+}
+/* --------------Home page styling end ---------------------- */
+
+/* --------------About us  page styling ---------------------- */
+/* Logo Area */
+.logo-area {
+  
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+}
+.logo {
+    width: 90px;          /* size barha diya */
+    height: 90px;
+    border-radius: 50%;   /* circle */
+    object-fit: cover;    /* image distort nahi hogi */
+    border: 3px solid #ff6f61; /* brand color border */
+}
+
+
+
+
+/* Active Link */
+nav ul li a.active {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+/* Navbar hover */
+nav ul li a:hover {
+    background-color: #ef8383;
+    border-radius: 5px;
+}
+
+/* Hero / About Intro */
+.about-hero {
+    background-color: #ffe8e4;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.about-hero h2 {
+    color: #e81b08;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Our Story Section */
+.our-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    background-color: #e58877;
+    border-radius: 15px;
+    margin: 20px;
+     transition: transform 0.3s ease;
+}
+
+.story-text {
+    max-width: 500px;
+    
+}
+
+.story-text h3 {
+    color: #f53827;
+    margin-bottom: 15px;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.story-text p {
+    font-size: 16px;
+    line-height: 1.6;
+margin-left: 15px;
+}
+
+.story-img img {
+    width: 400px;
+    border-radius: 15px;
+}
+.story-text:hover{
+    background-color: #ea9595;
+}
+.story-img:hover{
+      transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+.story-text:hover{
+       transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+.our-story:hover{
+      transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #e71313;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Discover Section */
+.discover {
+    background-color: #fff3f1;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.discover h3 {
+    color: #ff6f61;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Horizontal scroll container */
+.discover-container {
+     display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Discover Card */
+.discover-card {
+    min-width: 250px;
+    background-color: rgb(234, 132, 132);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+   width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.discover-card h4 {
+    color: #f41f0c;
+    margin-bottom: 8px;
+}
+
+.discover-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.discover-card:hover {
+    background-color: #f6abab;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .discover-container {
+        flex-direction: row;
+    }
+    .discover-card {
+        min-width: 200px;
+    }
+}
+/* ----------------------about page styling end---------------*/
+/*----------------Product page styling-------------------------- */
+/* Page Intro */
+
+.page-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fbf8f8;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.page-intro h2 {
+    color: #f11a06;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.page-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.category h3{
+     color: #f20c0c;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center; /
+}
+
+/* Cards Section */
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    
+    padding: 40px 20px;
+}
+
+/* Card styling with hover */
+.card {
+    background-color: rgb(233, 181, 181);
+    width: 250px;
+    border-radius: 15px;
+ 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #ff6f61;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+    color: #e85b50;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6f61;
+    margin-top: 5px;
+}
+
+/* Order Button */
+.order-btn {
+    background-color: #f91e0a;
+    color: rgb(252, 251, 251);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #e85b50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f11111;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    .story-img img {
+        width: 100%;
+    }
+}
+/*----------product styling end---------------*/
+/*-------------contact page styling---------------*/
+/* Login Page Background */
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff3f1;
+    margin: 20px 40px;
+    border-radius: 12px;
+}
+
+.contact-section h2 {
+    color: #f81905;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+   background-color: rgb(233, 181, 181);
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+
+    transform: translateY(-8px) scale(1.03);
+}
+
+.contact-card h3 {
+    color: #f51d09;
+    margin-bottom: 10px;
+}
+
+/* Inquiry Form */
+.form-area {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-area h3 {
+    color: #fa200c;
+    margin-bottom: 15px;
+}
+
+.form-area input,
+.form-area textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ee0909;
+    outline: none;
+}
+
+.form-area textarea {
+    height: 120px;
+}
+
+.form-area button {
+    background-color: #eb1b08;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-area button:hover {
+    background-color: #ed675e;
+}
+/*-------------contact styling end---------------*/
+/*-------------Login styling-----------------------*/
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.login-box {
+    background: #fff;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login-box .note {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #777;
+}
+
+/*----------------Login styling end----------------*/
+
+/*----Footer-----*/
+/* Footer */
+.main-footer {
+    background-color: #b90909;
+    color: #f1f1f1;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.footer-box {
+    width: 220px;
+    margin-bottom: 25px;
+}
+
+.footer-box h3 {
+    color: #f6f3f3;
+    margin-bottom: 15px;
+}
+
+.footer-box p,
+.footer-box li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.footer-box ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Footer Logo */
+.footer-logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.social-icons a img{
+     width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6f61;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    font-size: 13px;
+}
